@@ -1,0 +1,445 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #000000; /* Black background */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+    color: #ffffff; /* White text */
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: auto; /* Align to the start */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Push the ul to the right */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* White text */
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fdcb6e; /* Gold color on hover */
+}
+
+/* Intro Section */
+.intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    padding: 50px 0px 0px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* .profile-image{
+    margin-right: 90px;
+} */
+
+.profile-image img {  
+    height: 330px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-right: 40px;
+    transition: transform 0.3s ease;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.profile-image img:hover {
+    transform: scale(1.1);
+}
+
+.intro-text{
+ margin-right: auto;
+}
+
+.intro-text h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: slideIn 1s ease-in-out;
+}
+
+.intro-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.intro-text h4 {
+    font-size: 1.3rem;
+    color: #f2f2f2;
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    animation: fadeIn 1.5s ease-in-out;
+    text-align: justify;
+}
+
+.btn_resume{
+    padding: 12px 30px;
+    background-color: white;
+    color: #333;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+.btn_resume a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.btn_resume:hover {
+    background-color: greenyellow;
+    transform: scale(1.1);
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 60px 0px 50px ;
+    background-color: #000; 
+    color: #fff; 
+    text-align: center;
+}
+
+
+.skills-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff; 
+    margin-bottom: 20px;
+}
+
+.skills-section h2 {
+    font-size: 1.8rem; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.skills-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Increased min size */
+    gap: 50px;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.skill-img {
+    width: 120px; 
+    height: 120px; 
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.skill-img:hover {
+    transform: scale(1.2); /* Slightly larger zoom effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Darker box shadow on hover */
+}
+
+
+
+/* Experience Section */
+#exp{
+    background-color: black;
+    color: white;
+}
+.experience-section {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.experience-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.experience-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+
+.projects-section h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(248, 245, 245, 0.911), 0 1px 3px rgb(245, 239, 239);
+}
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.project p {
+    font-size: 1rem;
+    margin: 0 15px 15px;
+    color: white;
+}
+
+.project a {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin: 10px;
+    transition: color 0.3s;
+}
+
+.project a:hover {
+    color: #0056b3;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section Styling */
+.contact-section {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    padding-top: 30px;
+    font-size: 48px;
+}
+
+.contact-section form {
+    max-width: 400px;
+    margin: 0 auto 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-section label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #eedddd;
+    color: white;
+    font-size: 14px;
+}
+
+.contact-section input[type="text"]::placeholder,
+.contact-section input[type="email"]::placeholder {
+    color: #180202;
+    font-weight: bold;
+}
+
+.contact-section input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section input[type="submit"]:hover {
+    background-color: #0088cc;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link {
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    font-size: 40px;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+}
+
+.social-link .fa-instagram {
+    color: #E4405F;
+}
+
+.social-link .fa-linkedin {
+    color: #0A66C2;
+}
+
+.social-link .fa-envelope {
+    color: #D44638;
+}
+
+
+
+/* skill section */
+/* @media (max-width: 768px) {
+    .skills-section h1 {
+        font-size: 2.5rem;
+    }
+    .skills-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .skills-images {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+    }
+    
+    .skill-img {
+        width: 90px; 
+        height: 90px;
+    }
+    /* skill Responsive Design */
+    /* @media (max-width: 768px) {
+        .skills-section h1 {
+            font-size: 2.5rem;
+        }
+        .skills-section h2 {
+            font-size: 1.6rem;
+        }
+    
+        .skills-images {
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        }
+    
+        .skill-img {
+            width: 90px; 
+            height: 90px;
+        }
+    }
+  */
+
+  /* Responsive Design */
+
+/* For Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .intro-section {
+        flex-direction: column; /* Stack profile image and text vertically */
+        text-align: center; /* Center-align all content */
+        padding: 30px 10px;
+    }
+
+    .profile-image img {
+        height: 250px; /* Reduce image size for smaller screens */
+        margin: 10px auto; /* Center the image */
+    }
+
+    .intro-text h1 {
+        font-size: 2.5rem; /* Smaller heading size */
+    }
+
+    .intro-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .intro-text h4 {
+        font-size: 1rem; /* Reduce font size */
+        margin: 0 10px; /* Add some horizontal spacing */
+    }
+
+    .btn_resume {
+        font-size: 1rem;
+        padding: 8px 20px; /* Adjust padding for smaller buttons */
+    }
+}
+
+/* For Mobile Phones (480px and below) */
+@media screen and (max-width: 480px) {
+    .profile-image img {
+        height: 200px; /* Further reduce image size */
+        margin-bottom: 15px;
+    }
+
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+
+    .intro-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro-text h4 {
+        font-size: 0.9rem; /* Compact font size */
+    }
+
+    .btn_resume {
+        padding: 6px 15px;
+        font-size: 0.9rem; /* Smaller button for mobile */
+    }
+}
